@@ -92,3 +92,17 @@
 0:0:0:0:0:0:0:1 - - [12/Oct/2018:18:25:59 +0800] "GET /ssm_web/plugins/jvectormap/jquery-jvectormap-1.2.2.css HTTP/1.1" 404 1059 http-bio-8888-exec-8 1
 0:0:0:0:0:0:0:1 - - [12/Oct/2018:18:25:59 +0800] "GET /ssm_web/plugins/datatables/dataTables.bootstrap.min.js HTTP/1.1" 404 1059 http-bio-8888-exec-8 0
 0:0:0:0:0:0:0:1 - - [12/Oct/2018:18:26:00 +0800] "GET /ssm_web/plugins/datatables/dataTables.bootstrap.min.js HTTP/1.1" 404 1059 http-bio-8888-exec-8 0
+0:0:0:0:0:0:0:1 - - [12/Oct/2018:18:36:15 +0800] "GET /ssm_web HTTP/1.1" 302 - http-bio-8888-exec-1 0
+0:0:0:0:0:0:0:1 - - [12/Oct/2018:18:36:16 +0800] "GET /ssm_web/ HTTP/1.1" 200 13026 http-bio-8888-exec-3 282
+0:0:0:0:0:0:0:1 - - [12/Oct/2018:18:36:16 +0800] "GET /ssm_web/plugins/jvectormap/jquery-jvectormap-1.2.2.css HTTP/1.1" 404 1059 http-bio-8888-exec-4 8
+0:0:0:0:0:0:0:1 - - [12/Oct/2018:18:36:16 +0800] "GET /ssm_web/plugins/datatables/dataTables.bootstrap.min.js HTTP/1.1" 404 1059 http-bio-8888-exec-5 2
+0:0:0:0:0:0:0:1 - - [12/Oct/2018:18:36:16 +0800] "GET /ssm_web/plugins/datatables/dataTables.bootstrap.min.js HTTP/1.1" 404 1059 http-bio-8888-exec-6 1
+0:0:0:0:0:0:0:1 - - [12/Oct/2018:18:36:32 +0800] "GET /ssm_web/product/findAll.do HTTP/1.1" 200 25814 http-bio-8888-exec-7 2737
+0:0:0:0:0:0:0:1 - - [12/Oct/2018:18:36:32 +0800] "GET /ssm_web/plugins/jvectormap/jquery-jvectormap-1.2.2.css HTTP/1.1" 404 1059 http-bio-8888-exec-9 4
+0:0:0:0:0:0:0:1 - - [12/Oct/2018:18:36:32 +0800] "GET /ssm_web/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.css HTTP/1.1" 200 12339 http-bio-8888-exec-8 13
+0:0:0:0:0:0:0:1 - - [12/Oct/2018:18:36:32 +0800] "GET /ssm_web/plugins/datatables/dataTables.bootstrap.min.js HTTP/1.1" 404 1059 http-bio-8888-exec-10 3
+0:0:0:0:0:0:0:1 - - [12/Oct/2018:18:36:32 +0800] "GET /ssm_web/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.js HTTP/1.1" 200 70104 http-bio-8888-exec-8 22
+0:0:0:0:0:0:0:1 - - [12/Oct/2018:18:36:32 +0800] "GET /ssm_web/plugins/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js HTTP/1.1" 200 813 http-bio-8888-exec-1 12
+0:0:0:0:0:0:0:1 - - [12/Oct/2018:18:36:33 +0800] "GET /ssm_web/plugins/iCheck/square/blue.png HTTP/1.1" 200 2185 http-bio-8888-exec-1 4
+0:0:0:0:0:0:0:1 - - [12/Oct/2018:18:36:33 +0800] "GET /ssm_web/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028 http-bio-8888-exec-7 7
+0:0:0:0:0:0:0:1 - - [12/Oct/2018:18:36:33 +0800] "GET /ssm_web/plugins/datatables/dataTables.bootstrap.min.js HTTP/1.1" 404 1059 http-bio-8888-exec-7 1
