@@ -1,0 +1,4 @@
+com\itcast\ssm\service\impl\ProductServiceImpl.class
+com\itcast\ssm\service\impl\OrdersServiceImpl.class
+com\itcast\ssm\service\IOrdersService.class
+com\itcast\ssm\service\IProductService.class
