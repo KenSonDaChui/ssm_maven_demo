@@ -1,3 +1,5 @@
+com\itcast\ssm\dao\IMemberDao.class
+com\itcast\ssm\dao\ITravellerDao.class
 com\itcast\ssm\domain\Traveller.class
 com\itcast\ssm\dao\IProductDao.class
 com\itcast\ssm\dao\IOrdersDao.class
