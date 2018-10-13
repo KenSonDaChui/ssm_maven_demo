@@ -50,8 +50,14 @@ public class Traveller {
     public void setCredentialsType(Integer credentialsType) {
         this.credentialsType = credentialsType;
     }
-
     public String getCredentialsTypeStr() {
+        if (credentialsType!=null){
+            if (credentialsType==0){
+                credentialsTypeStr="身份证";
+            }else if (credentialsType==1){
+                credentialsTypeStr="暂住证";
+            }
+        }
         return credentialsTypeStr;
     }
 
@@ -81,5 +87,20 @@ public class Traveller {
 
     public void setTravellerTypeStr(String travellerTypeStr) {
         this.travellerTypeStr = travellerTypeStr;
+    }
+
+    @Override
+    public String toString() {
+        return "Traveller{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", sex='" + sex + '\'' +
+                ", phoneNum='" + phoneNum + '\'' +
+                ", credentialsType=" + credentialsType +
+                ", credentialsTypeStr='" + credentialsTypeStr + '\'' +
+                ", credentialsNum='" + credentialsNum + '\'' +
+                ", travellerType=" + travellerType +
+                ", travellerTypeStr='" + travellerTypeStr + '\'' +
+                '}';
     }
 }
