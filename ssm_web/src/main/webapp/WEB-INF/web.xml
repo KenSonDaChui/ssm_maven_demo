@@ -9,6 +9,7 @@
          version="3.0">
 
   <!--编码过滤器-->
+    <!--配置中文乱码的问题-->
   <filter>
     <filter-name>encoding</filter-name>
     <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -26,6 +27,15 @@
     <url-pattern>/*</url-pattern>
   </filter-mapping>
 
+    <!--配置spring-security-->
+    <filter>
+        <filter-name>springSecurityFilterChain</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>springSecurityFilterChain</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
   <!--配置spring核心监听器-->
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
@@ -34,7 +44,7 @@
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <!-- 下面可以加载所有spring文件夹中的以applicationContext开头的配置文件 。   * 表示 的通配符 -->
-    <param-value>classpath:spring/applicationContext.xml</param-value>
+    <param-value>classpath:spring/applicationContext.xml,classpath:spring-security.xml</param-value>
   </context-param>
 
   <!--springmvc的核心servlet-->
