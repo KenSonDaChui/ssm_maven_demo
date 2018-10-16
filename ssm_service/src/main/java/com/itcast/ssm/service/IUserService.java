@@ -1,5 +1,6 @@
 package com.itcast.ssm.service;
 
+import com.itcast.ssm.domain.Role;
 import com.itcast.ssm.domain.UserInfo;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -18,9 +19,18 @@ public interface IUserService extends UserDetailsService {
 
 
     //保存用户信息
-    void save(UserInfo userInfo);
+    void save(UserInfo userInfo) throws Exception;
 
 
     //查询用户详细信息
-    UserInfo findById(String id);
+    UserInfo findById(String id) throws Exception;
+
+
+    //查询用户可添加的角色
+    UserInfo findUserAndOtherRole(String id) throws Exception;
+
+
+    //向用户添加角色
+    void addRoleToUser(String id, String[] roleIds) throws Exception;
+
 }

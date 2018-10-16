@@ -80,16 +80,16 @@
         <!-- 内容头部 -->
         <section class="content-header">
             <h1>
-                用户管理
-                <small>全部用户</small>
+                角色管理
+                <small>全部权限</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="${pageContext.request.contextPath}/index.jsp"><i
                         class="fa fa-dashboard"></i> 首页</a></li>
                 <li><a
-                        href="${pageContext.request.contextPath}/user/findAll.do">用户管理</a></li>
+                        href="${pageContext.request.contextPath}/user/findAll.do">角色管理</a></li>
 
-                <li class="active">全部用户</li>
+                <li class="active">全部权限</li>
             </ol>
         </section>
         <!-- 内容头部 /-->
@@ -134,28 +134,21 @@
                                    class="table table-bordered table-hover dataTable">
                                 <thead>
                                 <tr>
-                                    <th>名称</th>
-                                    <th>描述</th>
+                                    <th>权限名称</th>
+                                    <th>URL</th>
                                 </tr>
                                 </thead>
 
                                 <tr data-tt-id="0">
-                                    <td colspan="2">${user.username}</td>
+                                    <td colspan="2">${roleList.roleName}</td>
                                 </tr>
 
                                 <tbody>
-                                <c:forEach items="${user.roles}" var="role">
+                                <c:forEach items="${roleList.permissions}" var="per">
                                     <tr data-tt-id="1" data-tt-parent-id="0">
-                                        <td>${role.roleName }</td>
-                                        <td>${role.roleDesc }</td>
+                                        <td>${per.permissionName}</td>
+                                        <td>${per.url }</td>
                                     </tr>
-                                    <c:forEach items="${role.permissions}" var="permission">
-                                        <tr data-tt-id="1-1" data-tt-parent-id="1">
-                                            <td>${permission.permissionName}</td>
-                                            <td>${permission.url}</td>
-                                        </tr>
-
-                                    </c:forEach>
                                 </c:forEach>
                                 </tbody>
                             </table>
