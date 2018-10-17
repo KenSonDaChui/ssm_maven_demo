@@ -17,7 +17,7 @@ public class PasswordEncoder {
     }
 
     public static void main(String[] args) {
-        String passwordEncoder = getPasswordEncoder("1111");
+        String passwordEncoder = getPasswordEncoder("2222");
         System.out.println(passwordEncoder);
     }
 }

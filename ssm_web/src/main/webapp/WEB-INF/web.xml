@@ -61,4 +61,11 @@
     <servlet-name>springmvc</servlet-name>
     <url-pattern>*.do</url-pattern>
   </servlet-mapping>
+
+
+  <!--配置403权限受限页面-->
+  <error-page>
+    <location>/403.jsp</location>
+  </error-page>
+
 </web-app>

@@ -4,11 +4,13 @@ import com.itcast.ssm.domain.Permission;
 import com.itcast.ssm.domain.Role;
 import com.itcast.ssm.service.IRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.annotation.security.RolesAllowed;
 import java.util.List;
 
 /**
@@ -32,6 +34,8 @@ public class RoleController {
 
 
     @RequestMapping("/findAll.do")
+    //@PreAuthorize("hasRole('ROLE_USER')")
+    @PreAuthorize("authentication.principal.username='DaChui'")
     public ModelAndView findAll() throws Exception {
         ModelAndView mv = new ModelAndView();
         List<Role> list = roleService.findAll();
