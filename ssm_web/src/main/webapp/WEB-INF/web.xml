@@ -40,6 +40,12 @@
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
+
+  <!--配置springcontext,,在日志中注入request对象-->
+  <listener>
+    <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+  </listener>
+  
   <!--重新指定spring配置文件的路径-->
   <context-param>
     <param-name>contextConfigLocation</param-name>

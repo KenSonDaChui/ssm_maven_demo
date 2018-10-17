@@ -45,4 +45,9 @@
     <import resource="applicationContext-dao.xml"/>
 
 
+   <!--开启spring对注解事务的支持-->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+
+
 </beans>

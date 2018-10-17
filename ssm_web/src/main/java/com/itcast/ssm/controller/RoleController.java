@@ -35,7 +35,8 @@ public class RoleController {
 
     @RequestMapping("/findAll.do")
     //@PreAuthorize("hasRole('ROLE_USER')")
-    @PreAuthorize("authentication.principal.username='DaChui'")
+   // @PreAuthorize("authentication.principal.username='DaChui'")
+   //@RolesAllowed("USER")
     public ModelAndView findAll() throws Exception {
         ModelAndView mv = new ModelAndView();
         List<Role> list = roleService.findAll();
